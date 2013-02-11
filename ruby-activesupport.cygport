@@ -1,0 +1,10 @@
+inherit rubygem
+
+NAME="ruby-activesupport"
+VERSION=3.2.11
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby activesupport extension"
+DESCRIPTION="A toolkit of support libraries and Ruby core extensions extracted
+from the Rails framework. Rich support for multibyte strings, i18n, time zones,
+and testing."
