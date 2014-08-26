@@ -1,10 +1,16 @@
 inherit rubygem
 
 NAME="ruby-activesupport"
-VERSION=3.2.14
+VERSION=4.0.9
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Active Support extension"
 DESCRIPTION="A toolkit of support libraries and Ruby core extensions extracted
 from the Rails framework. Rich support for multibyte strings, i18n, time zones,
 and testing."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_activesupport_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_activesupport_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
